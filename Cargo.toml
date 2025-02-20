@@ -1,0 +1,19 @@
+[package]
+name = "rust-k8-ui"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.31.0"
+egui_extras = "0.31.0"
+crossbeam = "0.8"
+tokio = { version = "1.33.0", features = ["full"] }
+tokio-stream = { version = "0.1.17", features = ["net"] }
+futures = "0.3.31"
+k8s-openapi = { version = "0.24.0", features = ["latest"] }
+kube = { version = "0.98.0", features = ["runtime", "derive", "jsonpatch", "ws"] }
+anyhow = "1.0.96"
+regex = "1.11.1"
+base64 = "0.22.1"
+
+
